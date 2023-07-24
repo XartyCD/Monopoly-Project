@@ -1,0 +1,466 @@
+/*
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Tektur', cursive; 
+*/
+
+/* Обнуление стилей */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Обнуление стилей */
+
+.header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.7) ), url(images/background-header.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding-top: 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+.header__wrapper {
+    width: 82%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.nav {
+    display: flex;
+    background: #ced466;
+    align-items: center;
+    padding: 13.5px 2% 13.5px 1%;
+    border: 1.2px solid black;
+    border-radius: 9px;
+    justify-content: space-between;
+    border: 1.5px solid white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s linear;
+    padding: 6px 6px 6px 0px;
+}
+
+.logo:hover {
+    border-radius: 5px;
+    background-color: #b3b8539f;
+}
+
+.logo__img {
+    max-width: 65px;
+    max-height: 70px;
+}
+
+.logo__text {
+    font-family: 'Tektur', cursive; 
+    font-size: 36px;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__item {
+    font-family: 'Playfair Display', serif;
+    font-size: 19.5px;
+    margin-right: 28px;
+    padding: 2px 4px 3.5px 4px;
+    background-color: white;
+    border: 1.8px solid black;
+    border-radius: 8px;
+    transition: background-color 0.35s linear;
+}
+
+.nav__item:hover {
+    background-color: #fff59c;
+}
+
+.nav__item:last-child {
+    margin-right: 0px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1.8px solid darkmagenta;
+    border-radius: 10px;
+    padding-right: 6px;
+    cursor: pointer;
+    transition: background-color 0.35s linear;
+}
+
+.account:hover {
+    background-color: #d4d4d4;
+}
+
+.account__text {
+    font-family: 'Tektur', cursive; 
+    font-size: 14px;
+}
+
+.burger-menu__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.burger__line {
+    width: 28px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+.burger__line:last-child {
+    margin-bottom: 0px;
+}
+
+.burger-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.disp {
+    display: none;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.header__down {
+    background-color: #fffffabb;
+    border-radius: 12px;
+    margin-top: 200px;
+    padding: 40px;
+    text-align: center;
+}
+
+.header__title {
+    font-family: 'Tektur', cursive; 
+    font-size: 40px;
+    background-image: linear-gradient(to bottom, black, #edba02e8, #edba02e8);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.header__title-subtitle__line {
+    border: 2px solid #7d5a00ef;
+    margin: 20px 0px;
+    border-radius: 50px;
+}
+
+
+.header__title span{
+    font-size: 40px;
+    vertical-align: middle;
+    color: #574e00db;
+}
+
+.header__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.main {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), url(images/main-background-advantages.jpeg);
+    height: 90vh;
+    border-top: 4px solid #8a8a8a96;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.main__wrapper {
+    width: 90%;
+    max-width: 1550;
+    margin: 0px auto;
+}
+
+.advantages {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.advantages__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #edba00eb;
+    background-color: #0009;
+    border: 0.6px solid #c2ac4075;
+    text-transform: uppercase;
+    border-radius: 3.4px;
+    display: inline-block;
+    padding: 14px 20px;
+}
+
+.advantages__holder-cards {
+    margin-top: 11vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advantages__card {
+    background-color: #ffffffb0;
+    border: 1.3px solid #ab8600a3;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__card img{
+    width: 100%;
+    height: 100%;
+    max-width: 170px;
+    max-height: 145px;
+}
+
+.advantages__card__title{
+    font-family: 'Tektur', cursive; 
+    font-size: 20px;
+    margin: 25px 0px 8px 0px;
+    max-width: 160px;
+}
+
+.advantages__card__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 230px;
+}
+
+
+
+
+/* Это на потом, сначала основная струткура */
+@media (max-width: 1192px) {
+    .logo__img {
+        max-width: 55px;
+        max-height: 60px;
+    }
+    
+    .logo__text {
+        font-size: 29px;
+    }
+
+    .nav__item {
+        font-size: 16.5px;
+        margin-right: 17px;
+        padding: 2px 4px 3.5px 4px;
+        border: 1.2px solid black;
+    }
+
+    .account {
+        border: 1.2px solid darkmagenta;
+        border-radius: 10px;
+        padding-right: 6px;
+        max-height: 60px;
+    }
+
+    .account img{
+        max-height: 56px;
+        max-height: 56px;
+    }
+
+    .account__text {
+        font-size: 12px;
+    }
+
+    .advantages__card {
+        max-width: 210px;
+    }
+
+    .advantages__card img{
+        max-width: 130px;
+        max-height: 115px;
+    }
+
+}
+
+@media (max-width: 965px) {
+    .burger-menu{
+        display: flex;
+        margin: 0px 20px 0px auto;
+    }
+
+    .nav__menu{
+        display: none;
+    }
+
+    .advantages__card {
+        max-width: 155px;
+        padding: 15px 9px;
+    }
+
+    .advantages__card__title{
+        font-size: 16px;
+    }
+    
+    .advantages__card__subtitle {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .header {
+        padding-top: 7px;
+    }
+
+    .nav {
+        padding: 8.5px 2% 8.5px 1%;
+        border: 1px solid white;
+    }
+
+    .logo__img {
+        max-width: 40px;
+        max-height: 45px;
+    }
+    
+    .logo__text {
+        font-family: 'Tektur', cursive; 
+        font-size: 20px;
+    }
+
+    .burger-menu{
+        margin: 0px 10px 0px auto;
+    }
+
+    .account{
+        display: none;
+    }
+
+    .nav__menu{
+        display: none;
+    }
+    
+    .header__down {
+        margin-top: 210px;
+        padding: 25px;
+    }
+
+    .header__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+       
+    .header__title span{
+        font-size: 33px;
+    }
+    
+    .header__subtitle {
+        font-size: 24px;
+    }
+
+    .advantages__holder-cards {
+        flex-direction: column;
+    }
+
+    .advantages__title {
+        font-size: 27px;
+        padding: 10px 16px;
+    }
+
+    .advantages__card {
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .advantages__card img{
+        max-width: 80px;
+        max-height: 65px;
+    }
+
+    .advantages__card__title {
+        margin: 0px 15px 0px 15px;
+        max-width: 135px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .header__down {
+        margin-top: 180px;
+        padding: 10px;
+    }
+
+    .header__title {
+        font-size: 25px;
+        line-height: 45px;
+    }
+       
+    .header__title span{
+        font-size: 22px;
+    }
+    
+    .header__subtitle {
+        font-size: 18px;
+    }
+
+    .main {
+        height: 100vh;
+    }
+
+    .advantages__card {
+        max-width: 100%;
+        padding: 12px 15px;
+        margin-top: 22px;
+        border: 1.7px solid #ff8800e0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .advantages__card img{
+        display: none;
+    }
+
+    .advantages__card__title {
+        margin: 0px 25px 0px 0px;
+        max-width: 135px;
+    }
+}
