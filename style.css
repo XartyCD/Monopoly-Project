@@ -197,10 +197,21 @@ img {
     font-weight: 500;
 }
 
-.main {
+
+
+/* доделать кнопку */
+
+
+.button-play-game {
+    background-color: #ffedd1;
+    border-radius: 3px;
+    padding: 10px 5px;
+}
+
+.main__advantages {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), url(images/main-background-advantages.jpeg);
-    height: 90vh;
-    border-top: 4px solid #8a8a8a96;
+    height: 100vh;
+    border-top: 1.2px solid #8a8a8a96;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -208,7 +219,7 @@ img {
 
 .main__wrapper {
     width: 90%;
-    max-width: 1550;
+    max-width: 1550px;
     margin: 0px auto;
 }
 
@@ -236,6 +247,12 @@ img {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+
+
+/* АНИМИРОВАТЬ КАРТОЧКИ */
+
 
 .advantages__card {
     background-color: #ffffffb0;
@@ -269,10 +286,75 @@ img {
     max-width: 230px;
 }
 
+.main__game-info {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 30), rgba(0, 0, 0, 20), rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 30) );
+    height: 130vh;
+    border-top: 1.2px solid #8a8a8a96;
+}
+
+.game-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.game-info__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff700d7;
+    background-color: #9c9c9c93;
+    border: 2px solid #ffffffd3;
+    text-transform: uppercase;
+    border-radius: 18px;
+    display: inline-block;
+    padding: 10px 17px;
+}
+
+.game-info__holder-questions {
+    width: 96%;
+    margin: 80px auto 0px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-info__question {
+    background-color: #fff5e5;
+    border: 3.3px solid #9c4100a3;
+    border-radius: 3px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto 0px 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    max-width: 600px;
+}
+
+.game-info__question_right {
+    margin: 25px 0px 0px auto;
+    border-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.game-info__question__title{
+    font-family: 'Tektur', cursive; 
+    font-size: 22px;
+    margin: 0px 0px 8px 0px;
+}
+
+.game-info__question__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* СДЕЛАТЬ FOOTER */
 
 
 
-/* Это на потом, сначала основная струткура */
 @media (max-width: 1192px) {
     .logo__img {
         max-width: 55px;
@@ -313,6 +395,11 @@ img {
     .advantages__card img{
         max-width: 130px;
         max-height: 115px;
+    }
+
+    .game-info__holder-questions {
+        width: 100%;
+        margin: 70px auto 0px auto;
     }
 
 }
@@ -419,7 +506,27 @@ img {
         margin: 0px 15px 0px 15px;
         max-width: 135px;
     }
+
+    .game-info__title {
+        font-size: 28px;
+        padding: 10px 13px;
+    }
+
+    .game-info__question {
+        background-color: #fff5e5;
+        border-radius: 25px;
+        padding: 13px 10px;
+        margin: 25px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .game-info__question__title{
+        font-size: 20px;
+    }
     
+    .game-info__question__subtitle {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -441,14 +548,10 @@ img {
         font-size: 18px;
     }
 
-    .main {
-        height: 100vh;
-    }
-
     .advantages__card {
         max-width: 100%;
         padding: 12px 15px;
-        margin-top: 22px;
+        margin-top: 26.5px;
         border: 1.7px solid #ff8800e0;
         flex-direction: row;
         align-items: center;
@@ -463,4 +566,31 @@ img {
         margin: 0px 25px 0px 0px;
         max-width: 135px;
     }
+
+    .game-info__title {
+        font-size: 24px;
+        padding: 10px 6px;
+    }
+
+    .game-info__title span{
+        display: none;
+    }
+
+    .game-info__holder-questions {
+        margin: 50px auto 0px auto;
+    }
+
+    .game-info__question {
+        padding: 12px 8px;
+        margin: 25px 0px 0px 0px;
+    }
+
+    .game-info__question__title{
+        font-size: 17px;
+    }
+    
+    .game-info__question__subtitle {
+        font-size: 13px;
+    }
+
 }
