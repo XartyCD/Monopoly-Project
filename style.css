@@ -1,9 +1,3 @@
-/*
-font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Tektur', cursive; 
-*/
-
 /* Обнуление стилей */
 html {
     box-sizing: border-box;
@@ -34,9 +28,9 @@ img {
 
 .header {
     background-image: linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.7) ), url(images/background-header.jpeg);
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
-    padding-top: 12px;
+    padding: 12px 0px 90px 0px;
     background-size: cover;
     background-position: center;
 }
@@ -184,7 +178,6 @@ img {
     border-radius: 50px;
 }
 
-
 .header__title span{
     font-size: 40px;
     vertical-align: middle;
@@ -197,20 +190,34 @@ img {
     font-weight: 500;
 }
 
-
-
-/* доделать кнопку */
-
+.header__button-play-game {
+    margin-top: 32px;
+    text-align: center;
+}
 
 .button-play-game {
-    background-color: #ffedd1;
-    border-radius: 3px;
-    padding: 10px 5px;
+    font-family: 'Tektur', cursive; 
+    font-size: 26px;
+    background-color: #de9221;
+    border: 3px solid black;
+    text-transform: uppercase;
+    border-radius: 7px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: all 0.8s;
 }
+
+.button-play-game:hover {
+    background-color: #ffb31aed;
+    border: 3px solid white;
+}
+
+/* MAIN */
 
 .main__advantages {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), url(images/main-background-advantages.jpeg);
-    height: 100vh;
+    height: 100%;
+    padding: 0px 0px 180px 0px;
     border-top: 1.2px solid #8a8a8a96;
     background-repeat: no-repeat;
     background-position: top;
@@ -225,7 +232,7 @@ img {
 
 .advantages {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .advantages__title {
@@ -248,12 +255,6 @@ img {
     justify-content: space-between;
 }
 
-
-
-
-/* АНИМИРОВАТЬ КАРТОЧКИ */
-
-
 .advantages__card {
     background-color: #ffffffb0;
     border: 1.3px solid #ab8600a3;
@@ -263,6 +264,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s;
+}
+
+.advantages__card:hover {
+    background-color: #e0e0e0b0;
+    border: 1.3px solid #e00000a3;
 }
 
 .advantages__card img{
@@ -288,8 +295,10 @@ img {
 
 .main__game-info {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 30), rgba(0, 0, 0, 20), rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 30) );
-    height: 130vh;
+    height: 100%;
+    padding: 0px 0px 100px 0px;
     border-top: 1.2px solid #8a8a8a96;
+    border-bottom: 2px solid #8a8a8a96;
 }
 
 .game-info {
@@ -322,13 +331,14 @@ img {
     background-color: #fff5e5;
     border: 3.3px solid #9c4100a3;
     border-radius: 3px;
-    padding: 15px 15px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
     margin: 25px auto 0px 0px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     max-width: 600px;
+    
 }
 
 .game-info__question_right {
@@ -350,10 +360,42 @@ img {
     font-weight: 500;
 }
 
+.main__button-play-game {
+    margin-top: 65px;
+    text-align: center;
+}
 
-/* СДЕЛАТЬ FOOTER */
+/* MAIN */
 
+.footer {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9) );
+    height: 100%;
+    padding: 70px 0px;
+}
 
+.footer__wrapper {
+    width: 60%;
+    max-width: 1550px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.footer__user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_dev-info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 @media (max-width: 1192px) {
     .logo__img {
@@ -401,7 +443,6 @@ img {
         width: 100%;
         margin: 70px auto 0px auto;
     }
-
 }
 
 @media (max-width: 965px) {
@@ -414,19 +455,28 @@ img {
         display: none;
     }
 
+    .header__down {
+        margin-top: 170px;
+        padding: 20px 25px;
+    }
+
     .advantages__card {
         max-width: 155px;
         padding: 15px 9px;
     }
 
     .advantages__card__title{
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .advantages__card__subtitle {
-        font-size: 14px;
+        font-size: 15px;
     }
 
+    .footer__wrapper {
+        width: 72%;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -479,6 +529,12 @@ img {
         font-size: 24px;
     }
 
+    .button-play-game {
+        font-family: 'Tektur', cursive; 
+        font-size: 24px;
+        padding: 10px 15px;
+    }
+
     .advantages__holder-cards {
         flex-direction: column;
     }
@@ -527,6 +583,33 @@ img {
     .game-info__question__subtitle {
         font-size: 16px;
     }
+
+    .footer {
+        padding: 50px 0px;
+    }
+
+    .footer__wrapper {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .footer_dev-info {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 585px) {
+    .footer {
+        padding: 28px 0px;
+    }
+
+    .footer__wrapper a, .footer__wrapper p{
+        max-width: 180px;
+    }
+
+    .footer_dev-info {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
@@ -548,6 +631,13 @@ img {
         font-size: 18px;
     }
 
+    .button-play-game {
+        font-family: 'Tektur', cursive; 
+        font-size: 22px;
+        padding: 8px 12px;
+        max-width: 190px;
+    }
+
     .advantages__card {
         max-width: 100%;
         padding: 12px 15px;
@@ -558,18 +648,22 @@ img {
         justify-content: space-between;
     }
 
+    .advantages__card:hover {
+        border: 1.7px solid #cf5600e0;
+    }
+
     .advantages__card img{
         display: none;
     }
 
     .advantages__card__title {
-        margin: 0px 25px 0px 0px;
+        margin: 0px 15px 0px 0px;
         max-width: 135px;
     }
 
     .game-info__title {
         font-size: 24px;
-        padding: 10px 6px;
+        padding: 10px 10px;
     }
 
     .game-info__title span{
@@ -592,5 +686,9 @@ img {
     .game-info__question__subtitle {
         font-size: 13px;
     }
-
+    
+    .footer__wrapper {
+        width: 90%;
+        font-size: 12px;
+    }
 }
