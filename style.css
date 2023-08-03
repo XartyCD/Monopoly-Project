@@ -10,6 +10,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
   
 a {
@@ -390,11 +396,24 @@ img {
     align-items: center;
 }
 
+.footer__user-info a:hover {
+    text-decoration: underline;
+}
+
 .footer_dev-info {
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.footer__author {
+    transition: all 1.2s;
+}
+
+.footer__author:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
 }
 
 @media (max-width: 1192px) {
