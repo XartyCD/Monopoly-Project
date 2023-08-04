@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Playfair+Display:wght@700&family=Poppins:wght@500&family=Tektur:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="nav">
+                <div class="logo">
+                    <img class="logo__img" src="images/logo.jpg" alt="Logo">
+                    <a href="" class="logo__text">Монократия</a>
+                </div>
+                <div class="nav__menu">
+                    <a href="../list-games-page/index.html" class="nav__item">Список игр</a>
+                    <!-- Друзья будут в выплывающем меню -->
+                    <a href="" class="nav__item">Друзья</a>
+                    <a href="../inventory/index.html" class="nav__item">Инвентарь</a>
+                    <a href="../info-page/index.html" class="nav__item">Об игре</a>
+                </div>
+                <div class='burger-menu'>
+                    <button id='burger' class="burger-menu__button">
+                        <p class="burger__line"></p>
+                        <p class="burger__line"></p>
+                        <p class="burger__line"></p>
+                    </button>
+                    <!-- Доделать Бургер меню-->
+                    <div id='menu' class='burger-slide disp'>
+                        <a class='nav-item block' href="#">Список игр</a>
+                        <a class='nav-item block' href="#struct">Друзья</a>
+                        <a class='nav-item' href="#autors">Инвентарь</a>
+                    </div>
+                    <!-- Доделать выскакивающий профиль -->
+                </div>
+                <div class="account">
+                    <img class="account__img" src="images/account-image.png" alt="Logo">
+                    <p class="account__text">Профиль</p>
+                </div>
+            </div>
+            <div class="header__down">
+                <div class="header__title">
+                    <h2>Monokratya <span>– Борьба за монопольное господство!</span></h2>
+                </div>
+                <p class="header__title-subtitle__line"></p>
+                <div class="header__subtitle">
+                    <p>Соревнуйтесь с друзьями и семьей: станьте вершителем судеб в Monokratiya, где монопольное господство – ваша цель!</p>
+                </div>
+            </div>
+            <div class="header__button-play-game">
+                <a class="button-play-game" href="#">Завладеть рынком</a>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>

@@ -464,7 +464,7 @@ img {
     }
 }
 
-@media (max-width: 965px) {
+@media (max-width: 975px) {
     .burger-menu{
         display: flex;
         margin: 0px 20px 0px auto;
