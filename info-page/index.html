@@ -25,23 +25,22 @@
                     <a href="index.html" class="nav__item">Об игре</a>
                 </div>
                 <div class='burger-menu'>
+                    <div id='menu' class='burger-slide'>
+                        <a class='burger-item' href="../main-game-page/index.html">Список игр</a>
+                        <a class='burger-item' href="">Друзья</a>
+                        <a class='burger-item' href="../inventory/index.html">Инвентарь</a>
+                        <a class="burger-item burger-hide" href="../account-page/index.html">Профиль</a>
+                    </div>
                     <button id='burger' class="burger-menu__button">
                         <p class="burger__line"></p>
                         <p class="burger__line"></p>
                         <p class="burger__line"></p>
                     </button>
-                    <!-- Доделать Бургер меню-->
-                    <div id='menu' class='burger-slide disp'>
-                        <a class='nav-item' href="../main-game-page/index.html">Список игр</a>
-                        <a class='nav-item' href="">Друзья</a>
-                        <a class='nav-item' href="../inventory/index.html">Инвентарь</a>
-                    </div>
-                    <!-- Доделать выскакивающий профиль -->
                 </div>
-                <div class="account">
+                <a class="account" href="../account-page/index.html">
                     <img class="account__img" src="images/account-image.png" alt="Logo">
                     <p class="account__text">Профиль</p>
-                </div>
+                </a>
             </div>
             <div class="header__down">
                 <div class="header__title">
@@ -130,5 +129,6 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
