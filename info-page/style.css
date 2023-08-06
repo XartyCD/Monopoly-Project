@@ -35,8 +35,9 @@ img {
 .header {
     background-image: linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.7) ), url(images/background-header.jpeg);
     height: 100%;
+    min-height: 100vh;
     background-repeat: no-repeat;
-    padding: 12px 0px 90px 0px;
+    padding: 12px 0px 80px 0px;
     background-size: cover;
     background-position: center;
 }
@@ -92,6 +93,7 @@ img {
     background-color: white;
     border: 1.8px solid black;
     border-radius: 8px;
+    cursor: pointer;
     transition: background-color 0.35s linear;
 }
 
@@ -121,6 +123,55 @@ img {
 .account__text {
     font-family: 'Tektur', cursive; 
     font-size: 14px;
+}
+
+.popup-friends {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.popup-friends__box {
+    position: relative;
+    padding: 15px;
+    background-color: #ffffffef;
+    width: 70vw;
+    max-width: 70vw;
+    height: 80vh;
+    margin-top: 120px;
+    border: 3px solid #c4c4c4ec;
+    border-radius: 3px;
+    overflow-y: auto;
+}
+
+.popup-friends__close {
+    cursor: pointer;
+    position: absolute;
+    padding: 0px;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.box__friends {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.popup-friends.open {
+    visibility: visible;
+    opacity: 1;
 }
 
 .burger-menu {
@@ -174,6 +225,7 @@ img {
     font-size: 17px;
     margin-top: 10px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .burger-hide {
@@ -187,7 +239,6 @@ img {
 .burger-item:first-child {
     margin-top: 0px;
 }
-
 
 .burger-menu{
     display: none;
@@ -229,7 +280,7 @@ img {
 }
 
 .header__button-play-game {
-    margin-top: 32px;
+    margin-top: 72px;
     text-align: center;
 }
 
@@ -255,6 +306,7 @@ img {
 .main__advantages {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) ), url(images/main-background-advantages.jpeg);
     height: 100%;
+    min-height: 100vh;
     padding: 0px 0px 180px 0px;
     border-top: 1.2px solid #8a8a8a96;
     background-repeat: no-repeat;
@@ -334,6 +386,7 @@ img {
 .main__game-info {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 30), rgba(0, 0, 0, 20), rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 30) );
     height: 100%;
+    min-height: 100vh;
     padding: 0px 0px 100px 0px;
     border-top: 1.2px solid #8a8a8a96;
     border-bottom: 2px solid #8a8a8a96;

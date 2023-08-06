@@ -20,14 +20,14 @@
                 </div>
                 <div class="nav__menu">
                     <a href="../main-game-page/index.html" class="nav__item">Список игр</a>
-                    <a href="" class="nav__item">Друзья</a>
+                    <p class="nav__item btn-friends-popup">Друзья</p>
                     <a href="../inventory/index.html" class="nav__item">Инвентарь</a>
                     <a href="index.html" class="nav__item">Об игре</a>
                 </div>
                 <div class='burger-menu'>
                     <div id='menu' class='burger-slide'>
                         <a class='burger-item' href="../main-game-page/index.html">Список игр</a>
-                        <a class='burger-item' href="">Друзья</a>
+                        <p class='burger-item btn-friends-popup'>Друзья</p>
                         <a class='burger-item' href="../inventory/index.html">Инвентарь</a>
                         <a class="burger-item burger-hide" href="../account-page/index.html">Профиль</a>
                     </div>
@@ -42,6 +42,32 @@
                     <p class="account__text">Профиль</p>
                 </a>
             </div>
+            <!-- popup-friends -->
+            <div id="popup-friends" class="popup-friends">
+                <div class="popup-friends__box">
+                    <button class="popup-friends__close">
+                        <svg id="close-btn-friends-popup" xmlns="http://www.w3.org/2000/svg" width="33" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                    <h2 class="box__title">Список ваших друзей:</h2>
+                    <div class="box__friends">
+                        <div class="box__item">
+                            <img src="" alt="avatar">
+                            <a href="#">#api-friend</a>
+                        </div>
+                        <div class="box__item">
+                            <img src="" alt="avatar">
+                            <a href="#">#api-friend</a>
+                        </div>
+                        <div class="box__item">
+                            <img src="" alt="avatar">
+                            <a href="#">#api-friend</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popup-friends -->
             <div class="header__down">
                 <div class="header__title">
                     <h2>Monokratya <span>– Борьба за монопольное господство!</span></h2>
