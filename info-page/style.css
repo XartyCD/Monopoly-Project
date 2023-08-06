@@ -156,10 +156,12 @@ img {
     cursor: pointer;
     position: absolute;
     padding: 0px;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     border: none;
     background-color: transparent;
+    width: 35px;
+    height: 35px;
 }
 
 .box__friends {
