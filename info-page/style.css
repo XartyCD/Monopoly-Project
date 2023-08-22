@@ -209,8 +209,9 @@ img {
 }
 
 .burger-slide {
-    display: none;
     position: absolute;
+    visibility: hidden;
+    opacity: 0;
     width: 210px;
     top: -1.5px;
     right: 0px;
@@ -218,6 +219,11 @@ img {
     padding: 10px;
     border-top: 5px solid black;
     border-radius: 4px;
+}
+
+.burger-slide.open {
+    visibility: visible;
+    opacity: 1;
 }
 
 .burger-item {
